@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0048",
+  "defendant_first_name": "Chris",
+  "defendant_last_name": "Smith",
+  "defendant_dob": "1987-09-09",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "FELONY"
+    }
+  ],
+  "status": "CLOSED",
+  "last_updated": "2025-11-18T22:08:01.947672Z",
+  "county": "Miami-Dade"
+}

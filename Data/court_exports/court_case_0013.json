@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0013",
+  "defendant_first_name": "Maria",
+  "defendant_last_name": "Lee",
+  "defendant_dob": "1981-06-26",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "CLOSED",
+  "last_updated": "2025-11-18T22:08:01.923874Z",
+  "county": "Hillsborough"
+}

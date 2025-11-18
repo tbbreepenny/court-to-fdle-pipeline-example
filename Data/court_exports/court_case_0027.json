@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0027",
+  "defendant_first_name": "John",
+  "defendant_last_name": "Smith",
+  "defendant_dob": "1981-06-17",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "CLOSED",
+  "last_updated": "2025-11-18T22:08:01.933335Z",
+  "county": "Hillsborough"
+}

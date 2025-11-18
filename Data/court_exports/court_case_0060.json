@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0060",
+  "defendant_first_name": "John",
+  "defendant_last_name": "Smith",
+  "defendant_dob": "1970-06-26",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.957322Z",
+  "county": "Miami-Dade"
+}

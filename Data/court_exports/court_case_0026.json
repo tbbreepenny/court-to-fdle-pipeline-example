@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0026",
+  "defendant_first_name": "Jane",
+  "defendant_last_name": "Lee",
+  "defendant_dob": "2001-01-01",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "FELONY"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.931973Z",
+  "county": "Hillsborough"
+}

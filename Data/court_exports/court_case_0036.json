@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0036",
+  "defendant_first_name": "Maria",
+  "defendant_last_name": "Brown",
+  "defendant_dob": "1985-05-03",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "FELONY"
+    }
+  ],
+  "status": "CLOSED",
+  "last_updated": "2025-11-18T22:08:01.938467Z",
+  "county": "Hillsborough"
+}

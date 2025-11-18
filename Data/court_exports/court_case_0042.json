@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0042",
+  "defendant_first_name": "Taylor",
+  "defendant_last_name": "Johnson",
+  "defendant_dob": "1993-06-30",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.941919Z",
+  "county": "Orange"
+}

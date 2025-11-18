@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0059",
+  "defendant_first_name": "John",
+  "defendant_last_name": "Johnson",
+  "defendant_dob": "2003-01-14",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.956728Z",
+  "county": "Miami-Dade"
+}

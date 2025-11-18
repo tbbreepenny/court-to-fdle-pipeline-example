@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0039",
+  "defendant_first_name": "Alex",
+  "defendant_last_name": "Garcia",
+  "defendant_dob": "1999-07-02",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "FELONY"
+    }
+  ],
+  "status": "CLOSED",
+  "last_updated": "2025-11-18T22:08:01.939987Z",
+  "county": "Duval"
+}

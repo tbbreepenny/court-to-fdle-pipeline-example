@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0071",
+  "defendant_first_name": "John",
+  "defendant_last_name": "Smith",
+  "defendant_dob": "2002-11-22",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "FELONY"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.971095Z",
+  "county": "Orange"
+}

@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0033",
+  "defendant_first_name": "Chris",
+  "defendant_last_name": "Johnson",
+  "defendant_dob": "1981-05-11",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.936923Z",
+  "county": "Duval"
+}

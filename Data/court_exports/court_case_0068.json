@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0068",
+  "defendant_first_name": "Jane",
+  "defendant_last_name": "Garcia",
+  "defendant_dob": "1991-01-03",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "FELONY"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.967370Z",
+  "county": "Duval"
+}

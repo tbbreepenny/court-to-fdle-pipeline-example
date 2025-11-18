@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0021",
+  "defendant_first_name": "Jane",
+  "defendant_last_name": "Lee",
+  "defendant_dob": "1986-03-10",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "CLOSED",
+  "last_updated": "2025-11-18T22:08:01.926302Z",
+  "county": "Hillsborough"
+}

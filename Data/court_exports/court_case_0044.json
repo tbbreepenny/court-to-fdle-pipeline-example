@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0044",
+  "defendant_first_name": "Taylor",
+  "defendant_last_name": "Garcia",
+  "defendant_dob": "1996-05-16",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "CLOSED",
+  "last_updated": "2025-11-18T22:08:01.943121Z",
+  "county": "Orange"
+}

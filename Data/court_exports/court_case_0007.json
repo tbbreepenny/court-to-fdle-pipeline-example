@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0007",
+  "defendant_first_name": "Chris",
+  "defendant_last_name": "Smith",
+  "defendant_dob": "1983-10-29",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "FELONY"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.921746Z",
+  "county": "Duval"
+}

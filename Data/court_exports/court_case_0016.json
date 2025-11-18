@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0016",
+  "defendant_first_name": "Maria",
+  "defendant_last_name": "Johnson",
+  "defendant_dob": "1991-05-18",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "FELONY"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.924679Z",
+  "county": "Duval"
+}

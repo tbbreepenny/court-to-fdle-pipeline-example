@@ -1,0 +1,16 @@
+{
+  "court_case_id": "COURT-0019",
+  "defendant_first_name": "Alex",
+  "defendant_last_name": "Johnson",
+  "defendant_dob": "1979-02-23",
+  "charges": [
+    {
+      "charge_code": "123.45",
+      "charge_description": "Sample Felony Charge",
+      "severity": "MISDEMEANOR"
+    }
+  ],
+  "status": "OPEN",
+  "last_updated": "2025-11-18T22:08:01.925659Z",
+  "county": "Miami-Dade"
+}
