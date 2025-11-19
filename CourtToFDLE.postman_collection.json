@@ -1,0 +1,177 @@
+{
+  "info": {
+    "_postman_id": "c0f5b4e2-0000-0000-0000-court-fdle-pipeline",
+    "name": "Court → FDLE Pipeline",
+    "description": "Postman collection for the Court to FDLE data integration pipeline (.NET API + Python ETL).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "FDLE - Batch Ingest Cases",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n  {\n    \"externalCaseId\": \"COURT-0001\",\n    \"sourceSystem\": \"CountyCourt\",\n    \"defendant\": {\n      \"firstName\": \"Jane\",\n      \"lastName\": \"Doe\",\n      \"dob\": \"1990-01-01\"\n    },\n    \"charges\": [\n      {\n        \"code\": \"123.45\",\n        \"description\": \"Sample Felony Charge\",\n        \"severity\": \"FELONY\"\n      }\n    ],\n    \"status\": \"OPEN\",\n    \"lastUpdated\": \"2025-01-01T10:00:00Z\",\n    \"county\": \"Orange\"\n  },\n  {\n    \"externalCaseId\": \"COURT-0002\",\n    \"sourceSystem\": \"CountyCourt\",\n    \"defendant\": {\n      \"firstName\": \"John\",\n      \"lastName\": \"Smith\",\n      \"dob\": \"1985-06-15\"\n    },\n    \"charges\": [\n      {\n        \"code\": \"456.78\",\n        \"description\": \"Sample Misdemeanor Charge\",\n        \"severity\": \"MISDEMEANOR\"\n      }\n    ],\n    \"status\": \"CLOSED\",\n    \"lastUpdated\": \"2025-01-02T13:30:00Z\",\n    \"county\": \"Miami-Dade\"\n  }\n]\n"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/fdle/cases/batch",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "fdle",
+            "cases",
+            "batch"
+          ]
+        },
+        "description": "Bulk-ingest a list of FDLE case DTOs. This simulates the Python ETL posting 50–100 cases at once."
+      },
+      "response": [],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 201 (Created)\", function () {",
+              "    pm.response.to.have.status(201);",
+              "});",
+              "",
+              "pm.test(\"Response time is acceptable\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "FDLE - Get All Cases",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/fdle/cases",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "fdle",
+            "cases"
+          ]
+        },
+        "description": "Retrieve all FDLE cases stored in the in-memory database."
+      },
+      "response": [],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test(\"Response is an array\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.be.an('array');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "FDLE - Get Cases (Filtered by Status & County)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/fdle/cases?status=OPEN&county=Orange",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "fdle",
+            "cases"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "OPEN"
+            },
+            {
+              "key": "county",
+              "value": "Orange"
+            }
+          ]
+        },
+        "description": "Retrieve FDLE cases filtered by status and county."
+      },
+      "response": [],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "FDLE - Get Case by Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/fdle/cases/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "fdle",
+            "cases",
+            "1"
+          ]
+        },
+        "description": "Retrieve a single FDLE case by its internal Id (from the database). Update the Id as needed."
+      },
+      "response": [],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200 or 404\", function () {",
+              "    pm.expect([200, 404]).to.include(pm.response.code);",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5109",
+      "type": "string"
+    }
+  ]
+}
