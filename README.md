@@ -21,15 +21,10 @@ court-to-fdle-pipeline/
 └─ postman/
    └─ CourtToFDLE.postman_collection.json
 ```
- Absolutely — here is the **final, fully formatted, copy-and-paste-ready README.md** with **no extra commentary**, clean markdown, and aligned perfectly for GitHub.
-
-Just copy → paste into your `README.md`.
-
----
 
 # **Court → FDLE Data Integration Pipeline**
 
-A full end-to-end simulation of how criminal justice data flows from a county court system into a centralized state system (FDLE-style). This project demonstrates how to build, process, and transmit structured case data using:
+A full end-to-end simulation of how criminal justice data flows from a county court system into a centralized state system (FDLE-style). 
 
 * **.NET 8 Web API**
 * **Entity Framework Core (In-Memory DB)**
@@ -39,7 +34,7 @@ A full end-to-end simulation of how criminal justice data flows from a county co
 
 ---
 
-## 📝 **Overview**
+##
 
 This project simulates a realistic justice-system integration where:
 
